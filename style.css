@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* header */
+
+header {
+  height: 8vh;
+}
+
+.name {
+  width: 60%;
+  height: 8vh;
+}
+
+.name > a {
+  text-decoration: none;
+  color: #2e2e2e;
+  display: block;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-left: 10%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .name > a {
+    padding-top: 25px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .name > a {
+    padding-top: 20px;
+    font-size: 35px;
+  }
+}
+
+/*  About me section */
+
+.image-info {
+  height: 60vh;
+  background-color: #f5f8fa;
+}
+
+.center {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.8fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.image {
+  background-image: url(IMG_0186.PNG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid white;
+  background-color: #fff;
+  align-self: flex-end;
+}
+
+.name1 {
+  width: 80%;
+  height: 100px;
+  text-align: center;
+}
+
+.name1 p {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #3a4145;
+}
+
+.designation {
+  align-self: flex-start;
+  text-align: center;
+}
+
+.designation p {
+  font-size: 22px;
+  padding-top: 10px;
+  color: #0096cc;
+}
+
+@media screen and (min-width: 768px) {
+  .image-info {
+    height: 35vh;
+  }
+
+  .center {
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+  }
+  .name1 {
+    height: 80%;
+    align-self: center;
+  }
+}
+
+/* about-me-content */
+
+.about-me {
+  height: 75vh;
+}
+.center1 {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.heading {
+  width: 90%;
+}
+
+.heading > h3 {
+  font-size: 22px;
+  padding-bottom: 10px;
+  color: #2e2e2e;
+  font-weight: bolder;
+}
+
+.heading > p {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: lighter;
+}
+
+.contact {
+  width: 90%;
+}
+
+.contact > h3 {
+  font-size: 22px;
+  padding-bottom: 10px;
+  color: #2e2e2e;
+  font-weight: bolder;
+}
+
+.logos {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em 1em;
+}
+
+.logos a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+.logos a i {
+  font-size: 20px;
+}
+
+i span {
+  font-size: 18px;
+  font-weight: 100;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .about-me {
+    height: 50vh;
+  }
+
+  .center1 {
+    width: 70%;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1em;
+  }
+
+  .heading > h3 {
+    font-size: 26px;
+  }
+
+  .heading > p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
+  .contact > h3 {
+    font-size: 26px;
+  }
+
+  .logos {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em 1em;
+  }
+
+  .logos a i {
+    font-size: 23px;
+  }
+
+  i span {
+    font-size: 20px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .about-me {
+    height: 50vh;
+  }
+
+  .center1 {
+    width: 50%;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1em;
+  }
+
+  .heading > h3 {
+    font-size: 28px;
+  }
+
+  .heading > p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
+  .contact > h3 {
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+
+  .logos {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em 1em;
+  }
+
+  .logos a i {
+    font-size: 27px;
+  }
+
+  i span {
+    font-size: 25px;
+    padding-left: 15px;
+  }
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 20px;
+}
+
+footer span {
+  color: gray;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.footer-logo {
+  padding-left: 10px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  color: gray;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    height: 30px;
+  }
+
+  footer span {
+    font-size: 22px;
+  }
+
+  .footer-logo {
+    float: right;
+    margin-right: 15px;
+  }
+
+  .footer-logo a {
+    font-size: 30px;
+  }
+}
