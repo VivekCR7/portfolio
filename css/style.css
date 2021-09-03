@@ -22,6 +22,7 @@ header {
 .name {
   width: 60%;
   height: 8vh;
+  display: inline-block;
 }
 
 .name > a {
@@ -35,7 +36,25 @@ header {
 }
 
 nav {
-  display: none;
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+ul li {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #2e2e2e;
+  text-decoration: #0096cc underline;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
@@ -48,58 +67,19 @@ nav {
     font-size: 32px;
   }
 
-  nav {
-    display: inline-block;
-    width: 30%;
-    text-align: right;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  a {
-    color: #2e2e2e;
-    text-decoration: none;
-  }
-
   ul li {
     font-size: 24px;
-    font-weight: bolder;
-    color: #2e2e2e;
-    text-decoration: #0096cc underline;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .name {
-    display: inline-block;
-  }
-
   .name > a {
     padding-top: 20px;
     font-size: 35px;
   }
 
-  nav {
-    display: inline-block;
-    width: 30%;
-    text-align: right;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
   ul li {
     font-size: 24px;
-    font-weight: bolder;
-    color: #2e2e2e;
-    text-decoration: #0096cc underline;
   }
 }
 
